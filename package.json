@@ -1,0 +1,9 @@
+{
+  "name": "@microstore/common",
+  "version": "1.0.0",
+  "description": "Shared code between microstore services",
+  "main": "index.js",
+  "author": "Frank Gerold",
+  "license": "MIT",
+  "private": false
+}
