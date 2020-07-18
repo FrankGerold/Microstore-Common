@@ -2,8 +2,20 @@
   "name": "@microstore/common",
   "version": "1.0.0",
   "description": "Shared code between microstore services",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "author": "Frank Gerold",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "del ./build/*"
+  }
 }
