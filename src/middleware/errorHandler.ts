@@ -13,6 +13,8 @@ export const errorHandler = (
         .send({ errors: err.serializeErrors() });
     };
 
+    // For an unexpected error (not pre-defined,) log the error and send a generic "bad request" response.
+    console.error(err);
     res.status(400).send({
       errors: [
         {
