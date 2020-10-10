@@ -1,5 +1,5 @@
 # Microstore-Common
-## Code shared between services in my Microstore app.
+### Code shared between services in my Microstore app.
 
 ## Errors
 Code related to error handling. 
